@@ -14,7 +14,7 @@ with open("Risk data - Risk data.csv", "r") as f:
             if 18<= age <= 34:
                 age_band = 1
             else:
-                age_band = 1
+                age_band = 2
             
             income = int(row['INCOME'])
             if 15000<= income <= 30000:
@@ -50,12 +50,12 @@ with open("Risk data - Risk data.csv", "r") as f:
             storecar = int(row['STORECAR'])
             loans = int(row['LOANS'])
             risk = row['RISK']
-            if risk == 'bad risk':
-                risk =1
-            elif risk == 'bad profit':
-                risk = 2
-            else: 
-                risk = 3
+            # if risk == 'bad risk':
+            #     risk =1
+            # elif risk == 'bad profit':
+            #     risk = 2
+            # else: 
+            #     risk = 3
             
             writer.writerow(
                 {
