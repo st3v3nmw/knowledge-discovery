@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-with open("phone data ver2 - Original.csv", "r") as f:
+with open("phone-data.csv", "r") as f:
     reader = csv.DictReader(f)
     with open("preprocessed.csv", "w") as out:
         writer = csv.DictWriter(out, fieldnames=reader.fieldnames)

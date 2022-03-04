@@ -12,7 +12,7 @@ transaction no.,tel.no,gender,marital status,Age (yrs),time of call,length of ca
 221,077-71211,M,single,19,12:01a.m,40
 227,077-34568,F,married,44,3:39p.m,55
 235,077-08743,M,married,36,2:09a.m,27
-263,077-27865,F,married,47,11.02a.m,85
+263,077-27865,F,married,47,11:02a.m,85
 264,077-79864,M,married,26,2:05a.m,38
 288,077-67293,M,married,26,3:51p.m,51
 334,077-11180,F,married,22,11:54a.m,110
@@ -34,7 +34,7 @@ transaction no.,tel.no,gender,marital status,Age (yrs),time of call,length of ca
 594,077-67293,M,married,26,4:24p.m,39
 615,077-22223,F,married,51,8:23a.m,79
 623,077-34567,M,married,42,9:09a.m,92
-656,077-27865,F,married,47,10.14a.m,73
+656,077-27865,F,married,47,10:14a.m,73
 666,077-23333,M,single,22,2:19p.m,42
 668,077-24111,M,married,41,4:44p.m,52
 673,077-45454,F,single,34,4:51a.m,20
@@ -50,7 +50,7 @@ transaction no.,tel.no,gender,marital status,Age (yrs),time of call,length of ca
 855,077-39871,F,married,61,9:31a.m,79
 866,077-79864,M,married,26,12:32a.m,35
 895,077-87346,F,single,29,4:16a.m,19
-902,077-27865,F,married,47,8.42a.m,7
+902,077-27865,F,married,47,8:42a.m,7
 913,077-09876,F,married,33,2:56p.m,45
 936,077-79864,M,married,26,4:05a.m,129
 948,077-23333,M,single,22,3:48p.m,54
