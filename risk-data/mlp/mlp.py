@@ -5,9 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
 
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import plot_confusion_matrix
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, plot_confusion_matrix
 
 import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
@@ -21,7 +19,7 @@ x = data_frame.drop('RISK', axis=1)
 y = data_frame['RISK']
 
 #split the datasets
-trainX, testX, trainY, testY = train_test_split(x, y, test_size = 0.2)
+trainX, testX, trainY, testY = train_test_split(x, y, test_size = 0.2, random_state=42)
 
 
 ################### SCALING
@@ -49,13 +47,13 @@ mlp_clf.fit(trainX_scaled, trainY)
 y_pred = mlp_clf.predict(testX_scaled)
 
 
-print('Accuracy: {:.2f}'.format(accuracy_score(testY, y_pred)))
+print('Accuracy: {:.4f}'.format(accuracy_score(testY, y_pred)))
 
 # #### OTHER EVALUATION MENTRICS FROM THE MODEL
-print('Error rate: {:.2f}'.format(1 - accuracy_score(testY, y_pred)))
+print('Error rate: {:.4f}'.format(1 - accuracy_score(testY, y_pred)))
 
 
-fig = plot_confusion_matrix(mlp_clf, testX_scaled, testY, display_labels=mlp_clf.classes_)
+fig = plot_confusion_matrix(mlp_clf, testX_scaled, testY, display_labels=mlp_clf.classes_, normalize='all')
 fig.figure_.suptitle("Confusion Matrix for risk Dataset")
 plt.show()
 
@@ -78,8 +76,8 @@ grid = GridSearchCV(mlp_clf, param_grid, n_jobs= -1, cv=5)
 
 grid.fit(trainX_scaled, trainY)
 
-print("\n\nYou can improve the results by using the folowing parameters: ", grid.best_params_)
+print("\n\nYou can improve the results by using the following parameters: ", grid.best_params_)
 
 grid_predictions = grid.predict(testX_scaled) 
 
-print('Accuracy: {:.2f}'.format(accuracy_score(testY, grid_predictions)))
+print('Accuracy: {:.4f}'.format(accuracy_score(testY, grid_predictions)))

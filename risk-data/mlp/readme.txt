@@ -13,7 +13,7 @@ This is needed for plotting the confusion matrix
 
 RUNNING
 
-run preprocess.py ( here you can change for various bins)
+run preprocess.py (here you can change for various bins)
 run mlp.py for the results
 
 RESULTS
