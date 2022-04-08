@@ -1,0 +1,71 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     Chronic_Kidney_Disease
+Instances:    400
+Attributes:   25
+              age
+              bp
+              sg
+              al
+              su
+              rbc
+              pc
+              pcc
+              ba
+              bgr
+              bu
+              sc
+              sod
+              pot
+              hemo
+              pcv
+              wbcc
+              rbcc
+              htn
+              dm
+              cad
+              appet
+              pe
+              ane
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 25 class):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.7296   15 hemo
+ 0.6901   16 pcv
+ 0.5909   18 rbcc
+ 0.5904   19 htn
+ 0.5591   20 dm
+ 0.477     4 al
+ 0.4014   10 bgr
+ 0.3933   22 appet
+ 0.3752    7 pc
+ 0.3752   23 pe
+ 0.372    11 bu
+ 0.3505    3 sg
+ 0.3423   13 sod
+ 0.3254   24 ane
+ 0.3009    5 su
+ 0.2941   12 sc
+ 0.2906    2 bp
+ 0.2826    6 rbc
+ 0.2653    8 pcc
+ 0.2361   21 cad
+ 0.2254    1 age
+ 0.2053   17 wbcc
+ 0.1869    9 ba
+ 0.0769   14 pot
+
+Selected attributes: 15,16,18,19,20,4,10,22,7,23,11,3,13,24,5,12,2,6,8,21,1,17,9,14 : 24
+
