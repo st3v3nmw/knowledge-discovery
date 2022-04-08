@@ -20,6 +20,7 @@ class ClassificationResult:
     summary: str
 
     def print(self):
+        print(self.classifier)
         print(self.accuracy)
         pprint(self.confusion_matrix)
         print(self.summary)
@@ -142,6 +143,7 @@ def main():
 
     # Step 4: Identify the most important attributes
     select_features(dataset)
+
 
 
 if __name__ == "__main__":
